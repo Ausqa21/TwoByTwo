@@ -25,7 +25,7 @@ function calculation() {
     }
     if(parseInt(input13.value) < 1 || parseInt(input13.value) > 365) {
         error_msg.innerHTML = "Inputs can't be less than 1 or greater than 365";
-        error_msg.style.backgroundColor = 'red';
+        error_msg.style.backgroundColor = '#F94754';
         error_msg.style.color = 'black';
         error_msg.style.paddingLeft = '.7rem';
         setTimeout(function() {
