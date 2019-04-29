@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+    {% load static %}
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Custom CSS-->
+    <link rel="stylesheet" href="{% static 'two_by_two/css/styles.css' %}">
+</head>
+<body>
+    <!-- As a link -->
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="ml-sm-5 navbar-brand" href="#">RateCalc</a>
+    </nav>
+    <div id="main2" class="container">
+        <div class="table-responsive">
+            <table class="table text-center table-striped table-bordered">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Day</th>
+                        <th>Investment</th>
+                        <th>Interest</th>
+                        <th>Balance</th>
+                    </tr>
+                </thead>
+                <tbody>
+                {% for group in a_list %}
+                    <tr>
+                        <td>{{ group.0 }}</td>
+                        <td>{{ group.1 }}</td>
+                        <td>{{ group.2 }}</td>
+                        <td>{{ group.3 }}</td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <footer class="footer bg-translucent text-light fixed-bottom py-3">
+        <div class="container">
+            <span>&copy;Copyright {% now 'Y' %}. All rights reserved.</span>
+        </div>
+    </footer>
+    <!--JQuery-->
+    <script
+  src="https://code.jquery.com/jquery-3.4.0.min.js"
+  integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+  crossorigin="anonymous"></script>
+    <!--PopperJS-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!--Bootstrap JS-->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

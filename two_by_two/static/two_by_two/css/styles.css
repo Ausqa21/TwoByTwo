@@ -1,0 +1,54 @@
+body {
+    background-color: rgba(206, 198, 198, 0.178);
+    color: rgb(73, 73, 73);
+}
+
+#main1, #main2 {
+    width: 50rem;
+    margin: 3rem auto 5rem auto;
+}
+
+.card {
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 1.5rem 2rem rgba(0, 0, 0, .15);
+    /* color: #fff; */
+}
+
+#card1 {
+    background-color: rgba(86, 191, 183, .15);
+}
+
+#card2 {
+    background-color: rgba(1, 130, 121, .20);
+}
+
+#card3 {
+    background-color:  rgba(1, 130, 121, .20);
+}
+
+#card4 {
+    background-color: rgba(86, 191, 183, .15);
+}
+
+.btn {
+    color: rgb(73, 73, 73);
+    margin-left: 1rem;
+}
+
+#view-dt {
+    margin-right: 1rem;
+}
+
+.bg-translucent {
+    background-color: rgba(0, 0, 0, .55);
+}
+
+@media (max-width: 700px) {
+    #main1, #main2 {
+        width: 90%;
+    }
+
+    .card-deck {
+        margin: 0 auto;
+    }
+}
